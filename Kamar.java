@@ -1,4 +1,4 @@
-public abstract class Kamar {
+public class Kamar {
     private String nomorKamar;
     private String tipeKamar;
     private double hargaPerMalam;
@@ -41,7 +41,9 @@ public abstract class Kamar {
     public void setAvailable(boolean available) {
         this.available = available;
     }
-    public abstract void showDetails();
+    public void showDetails(){
+        return;
+    }
 
     public void clearHistory() {
         this.clearHistory = clearHistory;
